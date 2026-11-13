@@ -8,8 +8,8 @@ int main()
 {
     int kulNum,sifre,bakiye,borc,tus,tutar,kullanılabilirBakiye,devam,yatır,borcÖdeme,degerlendirme ;
     string yorum,gelistirici,uygulamaSifre,yorumGorme,kimlik ;
-    kimlik = "223301080" ;
-    uygulamaSifre = "szdrx122" ;
+    kimlik = "test-kimlik" ;
+    uygulamaSifre = "test" ;
     bakiye = 10000 ;
     borc   = 2560 ; 
     kullanılabilirBakiye = bakiye - borc ;
@@ -117,7 +117,7 @@ bas5 : cout << "\nUygulamanın geliştiricimisiniz:      " ; cin >> gelistirici 
 if(gelistirici == "evet"){
     cout << "\nUygulama kimliğinizi giriniz:    " ; cin >> kimlik ;
     cout << "Uygulama şifrenizi giriniz:        " ; cin >> uygulamaSifre ;
-    if(kimlik == "223301080" && uygulamaSifre == "szdrx122"){
+    if(kimlik == "test-kimlik" && uygulamaSifre == "test"){
         bas4 : cout << "Yapılan yorumu görmek istiyormusunuz:     " ; cin >> yorumGorme ;
         if(yorumGorme == "evet"){
             cout << yorum << endl ;
@@ -131,7 +131,7 @@ if(gelistirici == "evet"){
             goto bas4 ;
         }
     }
-    if(kimlik != "223301080" || uygulamaSifre != "szdrx122"){
+    if(kimlik != "test-kimlik" || uygulamaSifre != "test"){
         cout << "\nKimlik bilginizi veya uygulama şifrenizi yanlış girdiniz.Size yardımcı olamıyoruz... " << endl ;
         exit(0);
     }
